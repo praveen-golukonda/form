@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Internship Form</h1>
+    <form action="submit.html" method="post" enctype="multipart/form-data">
+        <section class="hello">
+        <div class="name">
+        <p>Enter your name:</p>
+        <input type="text" name="name" placeholder="Enter Your Name" required>
+        </div>
+        
+        <p>Enter your email:</p>
+        <input type="email"  class='mail' name="email" placeholder="Enter Your mail" required>
+        
+        <p>Enter your password:</p>
+        <input type="password" name="password" placeholder="Enter Your password" required>
+        
+        <p>Gender:</p>
+         <div class="radio">
+        <input type="radio" id="male" name="male" value="male">
+         <label for="male">male</label><br>
+         <input type="radio" id="female" name="female" value="female">
+         <label for="female">female</label><br>
+         </div>       
+        
+        <p>Which programming languages do you know?</p> <div class="checkbox">
+        <input type="checkbox" name="languages[]" value="c">
+                 <label for="html">html</label><br>
+        <input type="checkbox" name="languages[]" value="c++">
+                 <label for="css">css</label><br>
+        <input type="checkbox" name="languages[]" value="java">
+                 <label for="js">js</label><br>    
+        <input type="checkbox" name="languages[]" value="python">
+                 <label for="react">react</label><br>
+        <input type="checkbox" name="languages[]" value="sql">
+                 <label for="node">node</label><br> 
+                </div>   
+        <p>How many months do you want to participate in our internship program?</p>
+        <select name="duration">
+            <option value="3">3 months</option>
+            <option value="6">6 months</option>
+            <option value="9">9 months</option>
+            <option value="12">12 months</option>
+        </select>
+        
+        <p>Tell us about yourself:</p>
+        <textarea rows="10" cols="50" name="description" required></textarea>
+        
+        <p>Upload your resume:</p>
+        <input type="file" name="resume"><br>
+        
+        <div class='button'>
+        <input type="submit" class="button" name="submit" value="Submit">
+        </div>
+        </section>
+    </form>
+</div>
+</body>
+</html>
